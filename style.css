@@ -1,0 +1,922 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Play:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Bungee+Spice&family=Playco:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-image: url("img/Background1.png"); /* Your background */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #E4E6BC;
+}
+
+.logo-icon {
+  background: #232D33;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-text strong {
+  font-size: 18px;
+}
+
+.logo-text span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #E4E6BC;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #111;
+}
+
+/* Button */
+.btn {
+  background: #232D33;
+  padding: 8px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #E4E6BC;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+   background-image: url("img/IMG_2483\(1\).jpg");
+  background-repeat: no-repeat;
+  background-position: center; /* keep the bottom visible */
+  background-size: cover; /* show full image */
+}
+
+.hero-content h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: -30px;
+  text-transform: uppercase;
+  color: #232D33;
+}
+
+.hero-content p {
+  font-size: 30px;
+  margin-bottom: 25px;
+  margin-top: -25px;
+  opacity: 0.85;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #E4E6BC;
+}
+
+.portfolio{
+  font-size: 30px;
+  font-family: "Play", serif;
+  color: #E4E6BC;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.highlight-text {
+  font-size: 60px;
+  font-weight: 900;
+  color: black;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.hero-content h2 {
+  font-size: 72px;
+  font-family: "Playfair", serif;
+  line-height: 0.85;
+  color: #232D33;
+  margin-top: 60px;
+  
+}
+
+.highlight {
+  color: #E4E6BC;   /* Yellow highlight */
+  font-weight: bold; /* Optional: make it stand out */
+  font-weight: 900;
+  text-transform: uppercase;
+
+  /* Gradient text */
+  /* background: linear-gradient(to bottom, #ff0000 50%, #0000ff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+
+.hero-btn {
+  margin-top: 3px;
+  background: #E4E6BC;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+  
+}
+
+
+.hero-btn:hover {
+  background: #232D33;
+  color: #E4E6BC;
+}
+
+/* Scroll Down Animation */
+.scroll-down {
+  margin: 30px auto 0; 
+  position: relative;
+  width: 24px;
+  height: 70px;
+  border: 2px solid #E4E6BC;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.scroll-down span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #E4E6BC;
+  color: white;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite ;
+  margin-top: 6px;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(); opacity: 1; }
+  50%  { transform: translateY(32px); opacity: 0.6; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+
+.Gallery {
+  background: white;
+  color: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+
+.Shutterbug{
+  font-size: 60px;
+  font-family: "Playfair", serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filter-buttons {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filter-buttons button {
+  background: #eee;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: #232D33;
+  color: #fff;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Gallery Item */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.overlay p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.overlay span {
+  display: block;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+
+/* Lightbox background */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  text-align: center;
+  color: white;
+  max-width: 90%;
+}
+
+/* .lightbox-img {
+  max-width: initial;
+  max-height: 90vh;
+  border-radius: 10px;
+} */
+
+.lightbox-img {
+  max-width: initial;
+  max-height: 90vh;
+  border-radius: 10px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.lightbox-img.zoomed {
+  transform: scale(2);   /* Zoom factor */
+  cursor: zoom-out;
+}
+
+
+.lightbox-caption {
+  margin-top: 15px;
+}
+
+.lightbox-caption h2 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.lightbox-caption p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Next section styling */
+/* About Me Section */
+#about-me {
+  background-color: #faf8f8; /* soft off-white */
+  padding: 80px 20px;
+}
+
+#about-me .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#about-me .section-label {
+  font-size: 0.9rem;
+  color: #232D33; /* orange */
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#about-me h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Playfair", serif;;
+  color: #111; /* black for first part */
+  margin-bottom: 20px;
+  line-height: 1.0;
+}
+
+#about-me h2 .highlight {
+  color: #232D33; /* orange for second part */
+}
+
+#about-me h2 .indent {
+  display: inline-block;
+  margin-left: 60px; /* adjust spacing as needed */
+}
+
+#about-me p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Quote Box styling inside About Me */
+#about-me .quote-box {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+  
+  /* NEW FIXES */
+  max-width: 700px;       /* same as your text width */
+  margin-left: auto;      /* centers it in the same column */
+  margin-right: auto;     /* keeps it aligned with paragraph */
+}
+
+
+
+#about-me .quote-box p {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+#about-me .quote-box cite {
+  display: block;
+  font-size: 0.95rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Feedback Section */
+#feedback {
+  padding: 80px 20px;
+  background: white; /* same light background vibe */
+}
+
+.feedback-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 1.08);
+}
+
+.feedback-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.feedback-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.feedback-form .form-group {
+  margin-bottom: 20px;
+}
+
+.feedback-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #232D33; /* orange highlight */
+  box-shadow: 0 0 8px rgba(243, 156, 18, 0.2);
+}
+
+.feedback-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  background: #232D33;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.feedback-btn:hover {
+  background: #E4E6BC;
+  color: #111;
+}
+
+
+#success-message {
+  color: #28a745;
+  background-color: #f8fff9;
+  border: 1px solid #d4edda;
+  border-left: 5px solid #28a745;
+  padding: 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Footer Styles */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  opacity: 0.8;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* Remove default underline from all social links */
+.social-icons a {
+  color: #fff;
+  text-decoration: none; /* 👈 Removes default underline */
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Add underline on hover for both icons */
+.social-icons a:hover {
+  text-decoration: underline;
+  text-decoration-color: #e1306c; /* Instagram pink or your accent color */
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* Space between icon and underline */
+  color: #e1306c; /* Optional: change icon color too */
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff; /* White color */
+  transition: fill 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover svg {
+  fill: #e1306c; /* Instagram pink */
+  transform: scale(1.1);
+}
+
+.social-icons .material-symbols-outlined {
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover .material-symbols-outlined {
+  color: #e1306c;
+  transform: scale(1.1);
+}
+
+/* Existing CSS stays the same above */
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+/* Tablets (iPads, small laptops) */
+@media (max-width: 1024px) {
+  .hero-content h2 {
+    font-size: 50px;
+  }
+
+  .highlight-text {
+    font-size: 40px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+/* Mobile Devices (iPhone, Android) */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Hero */
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+  }
+
+  .highlight-text {
+    font-size: 22px;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .Shutterbug {
+    font-size: 36px;
+  }
+
+  /* About Me */
+  #about-me h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #about-me .indent {
+    margin-left: 0;
+  }
+
+  #about-me p {
+    font-size: 1rem;
+  }
+
+  /* Feedback */
+  .feedback-container {
+    padding: 20px;
+  }
+
+  .feedback-title {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* This rule will show the navbar ONLY when the body has the .home-page class */
+  body.home-page .navbar {
+    display: flex; /* Show the navbar */
+    flex-direction: column;
+    padding: 10px 20px;
+    position: static; /* Prevent it from staying fixed on top and covering content */
+    background: transparent; /* Make it transparent on the home page */
+    backdrop-filter: none; /* Remove the blur effect */
+  }
+}
+
+
+
+/* Hamburger menu button */
+.hamburger-menu {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  z-index: 20;
+}
+
+.hamburger-menu .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #E4E6BC; /* Match your accent color */
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mobile & Tablet Styles */
+@media (max-width: 1024px) {
+  /* Keep the logo and button on the same line */
+  .navbar {
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 14px 20px;
+    
+    /* Make the navbar fixed at the top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
+@media (max-width: 1024px) {
+  /* Add padding to the hero section equal to the navbar's height to prevent content overlap */
+  .hero {
+    padding-top: 90px; /* Adjust this value if the navbar height changes */
+  }
+}
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger button on mobile */
+  }
+
+  /* Dropdown box styling */
+  .nav-links {
+    display: flex; /* Keep it flex for internal layout */
+    flex-direction: column;
+    position: absolute; /* Position it relative to the navbar */
+    top: 100%; /* Place it right below the navbar */
+    right: 20px; /* Align to the right, adjust as needed */
+    background: rgba(45, 59, 68, 0.95); /* Dark background with slight transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Ensures rounded corners */
+    min-width: 180px; /* Adjust width as desired */
+    max-width: 90%; /* Prevent it from being too wide on very small screens */
+    z-index: 15; /* Make sure it's above other content but below hamburger */
+
+    /* Hide by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px); /* Small upward push when hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Slide down when active */
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #E4E6BC; /* Your accent color */
+    padding: 12px 20px; /* Padding for each link */
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: 1px solid rgba(228, 230, 188, 0.1); /* Subtle separator */
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none; /* No border for the last item */
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(228, 230, 188, 0.1); /* Light hover background */
+    color: #E4E6BC; /* Maintain accent color */
+  }
+
+  /* Style for the "Get in Touch" button within the dropdown */
+  .nav-links .btn {
+    background: #232D33; /* Darker button background */
+    color: #E4E6BC; /* Accent text color */
+    border-radius: 0; /* Remove border radius if you want sharp corners inside dropdown */
+    text-align: center; /* Center text if it's a block-level button */
+    padding: 14px 45px;
+    margin-top: -9px; /* Add some space above the button */
+    display: block; /* Make it take full width of dropdown item */
+  }
+
+  .nav-links .btn:hover {
+    background: #E4E6BC; /* Invert colors on hover */
+    color: #232D33;
+  }
+
+
+/* Mobile Devices (iPhone, Android) */
+@media (max-width: 768px) {
+    /* ... existing rules ... */
+    .hero-content h2 {
+        font-size: 36px;
+    }
+    .highlight-text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 380px) {
+  .hero {
+    /* Set a max height to prevent overflow on very small screens */
+    max-height: 100vh; 
+    overflow: hidden; /* Hide anything that overflows */
+  }
+
+  .hero-content {
+    /* Reduce margins to fit everything in */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 18px;
+    margin-bottom: -15px; /* Adjust spacing */
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+    margin-top: 40px; /* Adjust spacing */
+  }
+
+  .highlight-text {
+    font-size: 18px;
+    /* Adjust line height if needed */
+  
+  }
+}
