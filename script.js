@@ -298,4 +298,25 @@ function toggleNavbar() {
     document.body.classList.add("home-page");
   }
 }
+
 */
+
+// Go To Top Button functionality
+const goToTopBtn = document.querySelector(".go-to-top");
+
+// Show/hide the button on scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) { // Shows button after scrolling 300px
+    goToTopBtn.classList.add("show");
+  } else {
+    goToTopBtn.classList.remove("show");
+  }
+});
+
+// Scroll to top on click
+goToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
